@@ -1,8 +1,7 @@
 const customers = [];
 
 function addCustomer() {
-  const args = process.argv;
-  const username = args.slice(2);
+  const username = process.argv.slice(2);
 
   if (!username || username.length === 0) {
     throw "Error: userName is empty!";
@@ -16,7 +15,7 @@ function addCustomer() {
   });
 
   customers.forEach((customer) => {
-    console.log(`Ok - customer ${customer} was added`);
+    console.log(`ok. username: ${customer.username} with temporary password: ${customer.password}.`);
   });
 }
 
