@@ -5,7 +5,7 @@ function addCustomer() {
   const username = args.slice(2);
 
   if (!username || username.length === 0) {
-    throw ("Error: userName is empty!");
+    throw "Error: userName is empty!";
   }
 
   const tempPwd = Math.floor(Math.random() * 100000);
@@ -19,3 +19,5 @@ function addCustomer() {
     console.log(`Ok - customer ${customer} was added`);
   });
 }
+
+addCustomer();
