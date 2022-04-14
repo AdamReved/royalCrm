@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AdamReved/royalCrm/issues"
   },
-  "homepage": "https://github.com/AdamReved/royalCrm#readme"
+  "homepage": "https://github.com/AdamReved/royalCrm#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
